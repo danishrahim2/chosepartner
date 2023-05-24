@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`http://cryptoinfo.ulti.eu.org/home-less/`
+					`https://sites.google.com/view/choseyourpartner/home/`
 				}`,
 			},
 		};
