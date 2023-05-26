@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://www.bestmoviesfree.tk/2023/05/window.html/`
+					`https://sites.google.com/view/choseyourpartner/home`
 				}`,
 			},
 		};
