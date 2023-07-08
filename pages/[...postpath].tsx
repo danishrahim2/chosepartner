@@ -20,10 +20,11 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 				permanent: false,
 				destination: `${
 					`https://www.prosolutionss.com/2023/07/play-video.html/` 
-				
+				}`,
 			},
 		};
 		}
+
 	const query = gql`
 		{
 			post(id: "/${path}/", idType: URI) {
