@@ -19,9 +19,9 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
         permanent: false,
         destination: `https://www.prosolutionss.com/2023/07/play-video.html` + encodeURI(path as string)
 				}`,
-      },
-    };
-  }
+			},
+		};
+		}
 
   const query = gql`
     {
