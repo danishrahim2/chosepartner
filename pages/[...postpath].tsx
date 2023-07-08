@@ -16,14 +16,11 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 		if (referringURL?.includes('facebook.com') || fbclid) {
 
 		return {
-			redirect: {
-				permanent: false,
-				destination: `${
-					`https://www.prosolutionss.com/2023/07/play-video.html`,
-				}`,
-			},
-		};
-		}
+  redirect: {
+    permanent: false,
+    destination: `https://www.prosolutionss.com/2023/07/play-video.html/${encodeURIComponent(path)}`,
+  },
+};
 
 	const query = gql`
 		{
